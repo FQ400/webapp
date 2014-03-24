@@ -1,9 +1,35 @@
-!!!5
-%html
+!!!
+/[if lt IE 7 ] <html class="ie ie6" lang="de" data-ng-app='App'>
+/[if IE 7 ] <html class="ie ie7" lang="de" data-ng-app='App'>
+/[if IE 8 ] <html class="ie ie8" lang="de" data-ng-app='App'>
+/ [if (gte IE 9)|!(IE)]><!
+%html{id: 'ng-app', lang: 'de', 'data-ng-app' => 'App'}
+  / <![endif]
   %head
-    %link{:rel => 'stylesheet', :href => './styles/application.css'}/
 
+    %meta{charset: 'utf-8'}/
+
+    %base{href: '/'}
+
+    %title Carsten Lamm
+
+    %meta{content: 'This is my webpage', name: 'description'}/
+    %meta{content: 'width=device-width, initial-scale=1, maximum-scale=1', name: 'viewport'}/
+
+    %link{href: 'styles/application.css', rel: 'stylesheet'}/
+    %link{type: 'text/plain', rel: 'author', href: '/humans.txt'}/
+    /[if lt IE 9]
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    /
+
+    %link{href: 'images/favicon.ico', rel: 'shortcut icon'}/
+    %link{href: 'images/apple-touch-icon.png', rel: 'apple-touch-icon'}/
+    %link{href: 'images/apple-touch-icon-72x72.png', rel: 'apple-touch-icon', sizes: '72x72'}/
+    %link{href: 'images/apple-touch-icon-114x114.png', rel: 'apple-touch-icon', sizes: '114x114'}/
+
+    %script{src: './lib/angular/angular.js'}
+    %script{src: './lib/modernizr/modernizr.js'}
+    %script{src: './scripts/application.js'}
   %body
     asd
     123
-    asd
