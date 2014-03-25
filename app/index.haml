@@ -16,6 +16,7 @@
     %meta{content: 'This is my webpage', name: 'description'}/
     %meta{content: 'width=device-width, initial-scale=1, maximum-scale=1', name: 'viewport'}/
 
+    %link{href: 'http://fonts.googleapis.com/css?family=Open+Sans:300,700', rel: 'stylesheet', type: 'text/css'}/
     %link{href: 'styles/application.css', rel: 'stylesheet'}/
     %link{type: 'text/plain', rel: 'author', href: '/humans.txt'}/
     /[if lt IE 9]
@@ -31,5 +32,19 @@
     %script{src: './lib/modernizr/modernizr.js'}
     %script{src: './scripts/application.js'}
   %body
-    asd
-    123
+    .container
+      .sixteen.columns
+        %h1
+          Headline
+
+        %h2
+          Headline
+        %p dfghjdfghjsfdgs sfs dfsdf
+
+        %ul
+          %li element
+          %li element
+
+        %ol
+          %li element
+          %li element
